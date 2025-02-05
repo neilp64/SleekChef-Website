@@ -1,41 +1,106 @@
-/* Header Centering Fix */
-header .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #f9f9f9;
 }
 
-.brand {
-  font-size: 2.5rem;
-  margin: 1rem 0;
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  background: #333;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+.amazon-btn {
+  background: #ff9900;
+  color: #fff;
+}
+
+.amazon-btn:hover {
+  background: #e68a00;
+}
+
+/* Header */
+header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 nav ul {
-  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
   justify-content: center;
-  gap: 1rem;
-  margin: 1rem 0;
 }
 
-/* Hero Section Restoration */
+nav ul li a {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff9900;
+}
+
+/* Hero Section */
 .hero {
-  background: url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover;
-  color: white;
+  background: url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+  color: #fff;
   text-align: center;
   padding: 8rem 0;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero h2 {
-  font-size: 2.8rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 1.2;
 }
 
 .hero p {
-  font-size: 1.3rem;
-  max-width: 600px;
-  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
+}
+
 /* About Section */
 .about {
   padding: 4rem 0;
@@ -60,16 +125,17 @@ nav ul {
   border-radius: 10px;
   margin-top: 2rem;
 }
+
 /* Products Section */
 .products {
   padding: 4rem 0;
-  background: #fff;
+  background: #f9f9f9;
+  text-align: center;
 }
 
 .products h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  text-align: center;
 }
 
 .product-grid {
@@ -112,59 +178,10 @@ nav ul {
   margin-top: 1rem;
 }
 
-/* Product Detail Page */
-.product-detail {
-  padding: 4rem 0;
-  background: #fff;
-}
-
-.product-images img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.product-info {
-  margin-top: 2rem;
-}
-
-.product-info h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.product-info .price {
-  font-size: 1.5rem;
-  color: #333;
-  font-weight: bold;
-}
-
-.product-actions {
-  margin: 2rem 0;
-  display: flex;
-  gap: 1rem;
-}
-
-.product-description {
-  margin-top: 2rem;
-}
-
-.product-description h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.product-description ul {
-  list-style: none;
-  padding: 0;
-}
-
-.product-description ul li {
-  margin-bottom: 0.5rem;
-}
 /* Contact Section */
 .contact {
   padding: 4rem 0;
-  background: #f9f9f9;
+  background: #fff;
   text-align: center;
 }
 
@@ -208,4 +225,17 @@ nav ul {
 
 .contact-form button:hover {
   background: #555;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
 }
