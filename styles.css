@@ -1,3 +1,41 @@
+/* Header Centering Fix */
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.brand {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+nav ul {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Hero Section Restoration */
+.hero {
+  background: url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover;
+  color: white;
+  text-align: center;
+  padding: 8rem 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
 /* About Section */
 .about {
   padding: 4rem 0;
@@ -22,7 +60,107 @@
   border-radius: 10px;
   margin-top: 2rem;
 }
+/* Products Section */
+.products {
+  padding: 4rem 0;
+  background: #fff;
+}
 
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  font-size: 1.25rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.product p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.product .btn {
+  margin-top: 1rem;
+}
+
+/* Product Detail Page */
+.product-detail {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.product-images img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product-info {
+  margin-top: 2rem;
+}
+
+.product-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-info .price {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.product-actions {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.product-description {
+  margin-top: 2rem;
+}
+
+.product-description h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-description ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-description ul li {
+  margin-bottom: 0.5rem;
+}
 /* Contact Section */
 .contact {
   padding: 4rem 0;
