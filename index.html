@@ -1,89 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SleekChef - Sustainable Kitchen Solutions</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleekChef - Sustainable Kitchen Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>SleekChef</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container">
-      <h2>Minimalist Kitchen Tools for a Sustainable Future</h2>
-      <p>Ergonomic, stackable, and designed to reduce clutter and waste in your kitchen.</p>
-      <a href="#products" class="btn">Explore Our Products</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About SleekChef</h2>
-      <p>At SleekChef, we believe in creating kitchen tools that are as functional as they are beautiful. Our mission is to reduce clutter and waste in kitchens by providing sustainable, stackable, and ergonomic solutions. Every product is designed with the modern chef in mind—whether you're a home cook or a professional.</p>
-      <img src="https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sustainable Kitchen">
-    </div>
-  </section>
-
-  <!-- Products Section -->
-  <section id="products" class="products">
-    <div class="container">
-      <h2>Our Products</h2>
-      <div class="product-grid">
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1602142945851-89b4d9a162c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Stackable Utensil Set">
-          <h3>Stackable Utensil Set</h3>
-          <p>Nestable design for compact storage. Includes spatula, spoon, and ladle.</p>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <h1>SleekChef</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1602142945851-89b4d9a162c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Ergonomic Knife Set">
-          <h3>Ergonomic Knife Set</h3>
-          <p>Precision-crafted knives with stackable sheaths for safety and space-saving.</p>
-        </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1602142945851-89b4d9a162c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Collapsible Measuring Cups">
-          <h3>Collapsible Measuring Cups</h3>
-          <p>Space-saving cups that fold flat for easy storage.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Have questions or want to learn more about our products? Reach out to us!</p>
-      <form action="#" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <!-- Product Listing Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product">
+                    <a href="product-stackable-set.html">
+                        <img src="images/stackable-spatulas.webp" alt="Stackable Utensil Set">
+                        <h3>Stackable Utensil Set</h3>
+                    </a>
+                    <p>Nestable design for compact storage</p>
+                    <button class="btn amazon-btn" onclick="window.location.href='AMAZON_LINK_1'">Buy on Amazon</button>
+                </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 SleekChef. All rights reserved.</p>
-    </div>
-  </footer>
+                <!-- Product 2 -->
+                <div class="product">
+                    <a href="product-knife-set.html">
+                        <img src="images/knife-set.jpg" alt="Ergonomic Knife Set">
+                        <h3>Ergonomic Knife Set</h3>
+                    </a>
+                    <p>Precision-crafted with stackable sheaths</p>
+                    <button class="btn amazon-btn" onclick="window.location.href='AMAZON_LINK_2'">Buy on Amazon</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product">
+                    <a href="product-measuring-cups.html">
+                        <img src="images/measuring-cups.jpg" alt="Collapsible Measuring Cups">
+                        <h3>Collapsible Measuring Cups</h3>
+                    </a>
+                    <p>Space-saving foldable design</p>
+                    <button class="btn amazon-btn" onclick="window.location.href='AMAZON_LINK_3'">Buy on Amazon</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Account Section -->
+    <section id="account" class="account">
+        <div class="container">
+            <h2>Account Management</h2>
+            <div class="auth-forms">
+                <div class="signin">
+                    <h3>Sign In</h3>
+                    <form id="signin-form">
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit" class="btn">Sign In</button>
+                    </form>
+                </div>
+                <div class="signup">
+                    <h3>Create Account</h3>
+                    <form id="signup-form">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit" class="btn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section (Separate cart.html page) -->
+    <!-- Create a new file cart.html with similar structure -->
+    
+    <script>
+        // Simple Cart Functionality
+        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cartItems.length;
+        }
+        
+        function addToCart(productId) {
+            cartItems.push(productId);
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+            updateCartCount();
+        }
+        
+        // Initialize cart count
+        updateCartCount();
+    </script>
 </body>
 </html>
