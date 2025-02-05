@@ -1,111 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SleekChef - Sustainable Kitchen Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SleekChef - Sustainable Kitchen Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header with Navigation -->
-    <header>
-        <div class="container">
-            <h1>SleekChef</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
-                    <li><a href="account.html">Account</a></li>
-                </ul>
-            </nav>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="brand">SleekChef</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Minimalist Tools for Maximum Efficiency</h2>
+      <p>Redesign your kitchen with stackable, sustainable tools that save space and reduce waste.</p>
+      <a href="#products" class="btn">Explore Collection</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Our Best Sellers</h2>
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product">
+          <a href="product-stackable-set.html">
+            <img src="images/stackable-set.jpg" alt="Stackable Utensil Set">
+            <h3>Stackable Utensil Set</h3>
+          </a>
+          <p>Nestable design | Heat-resistant silicone</p>
+          <button class="btn amazon-btn" onclick="window.location.href='AMAZON_LINK_1'">Buy on Amazon</button>
         </div>
-    </header>
 
-    <!-- Product Listing Section -->
-    <section id="products" class="products">
-        <div class="container">
-            <h2>Our Products</h2>
-            <div class="product-grid">
-                <!-- Product 1 -->
-                <div class="product">
-                    <a href="product-stackable-set.html">
-                        <img src="images/stackable-spatulas.webp" alt="Stackable Utensil Set">
-                        <h3>Stackable Utensil Set</h3>
-                    </a>
-                    <p>Nestable design for compact storage</p>
-                    <button class="btn amazon-btn" onclick="window.location.href='AMAZON_LINK_1'">Buy on Amazon</button>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="product">
-                    <a href="product-knife-set.html">
-                        <img src="images/knife-set.jpg" alt="Ergonomic Knife Set">
-                        <h3>Ergonomic Knife Set</h3>
-                    </a>
-                    <p>Precision-crafted with stackable sheaths</p>
-                    <button class="btn amazon-btn" onclick="window.location.href='AMAZON_LINK_2'">Buy on Amazon</button>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="product">
-                    <a href="product-measuring-cups.html">
-                        <img src="images/measuring-cups.jpg" alt="Collapsible Measuring Cups">
-                        <h3>Collapsible Measuring Cups</h3>
-                    </a>
-                    <p>Space-saving foldable design</p>
-                    <button class="btn amazon-btn" onclick="window.location.href='AMAZON_LINK_3'">Buy on Amazon</button>
-                </div>
-            </div>
+        <!-- Product 2 -->
+        <div class="product">
+          <a href="product-knife-set.html">
+            <img src="images/knife-set.jpg" alt="Ergonomic Knife Set">
+            <h3>Ergonomic Knife Set</h3>
+          </a>
+          <p>Stackable sheaths | Precision blades</p>
+          <button class="btn amazon-btn" onclick="window.location.href='AMAZON_LINK_2'">Buy on Amazon</button>
         </div>
-    </section>
 
-    <!-- Account Section -->
-    <section id="account" class="account">
-        <div class="container">
-            <h2>Account Management</h2>
-            <div class="auth-forms">
-                <div class="signin">
-                    <h3>Sign In</h3>
-                    <form id="signin-form">
-                        <input type="email" placeholder="Email" required>
-                        <input type="password" placeholder="Password" required>
-                        <button type="submit" class="btn">Sign In</button>
-                    </form>
-                </div>
-                <div class="signup">
-                    <h3>Create Account</h3>
-                    <form id="signup-form">
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <input type="password" placeholder="Password" required>
-                        <button type="submit" class="btn">Sign Up</button>
-                    </form>
-                </div>
-            </div>
+        <!-- Product 3 -->
+        <div class="product">
+          <a href="product-measuring-cups.html">
+            <img src="images/measuring-cups.jpg" alt="Collapsible Measuring Cups">
+            <h3>Collapsible Measuring Cups</h3>
+          </a>
+          <p>Space-saving design | Dishwasher-safe</p>
+          <button class="btn amazon-btn" onclick="window.location.href='AMAZON_LINK_3'">Buy on Amazon</button>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Cart Section (Separate cart.html page) -->
-    <!-- Create a new file cart.html with similar structure -->
-    
-    <script>
-        // Simple Cart Functionality
-        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-        
-        function updateCartCount() {
-            document.getElementById('cart-count').textContent = cartItems.length;
-        }
-        
-        function addToCart(productId) {
-            cartItems.push(productId);
-            localStorage.setItem('cart', JSON.stringify(cartItems));
-            updateCartCount();
-        }
-        
-        // Initialize cart count
-        updateCartCount();
-    </script>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>We'd Love to Hear From You</h3>
+          <p>Have questions about our products or mission? Reach out!</p>
+          <ul>
+            <li>📧 hello@sleekchef.com</li>
+            <li>📞 (555) 123-4567</li>
+            <li>📍 123 Sustainable Way, Green City, CA</li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea rows="5" placeholder="Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 SleekChef. Sustainable Kitchen Solutions</p>
+    </div>
+  </footer>
+
+  <script>
+    // Cart functionality
+    let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    function updateCartCount() {
+      document.getElementById('cart-count').textContent = cartItems.length;
+    }
+    updateCartCount();
+  </script>
 </body>
 </html>
