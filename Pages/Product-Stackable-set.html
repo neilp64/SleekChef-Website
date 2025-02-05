@@ -1,24 +1,70 @@
-<!-- product-stackable-set.html -->
-<section class="product-detail">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackable Utensil Set - SleekChef</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <header>
     <div class="container">
-        <div class="product-images">
-            <img src="../images/stackable-set-detail.jpg" alt="Stackable Set Detail">
-        </div>
-        <div class="product-info">
-            <h2>Stackable Utensil Set</h2>
-            <p class="price">$29.99</p>
-            <div class="product-actions">
-                <button class="btn" onclick="addToCart('stackable-set')">Add to Cart</button>
-                <button class="btn amazon-btn" onclick="window.location.href='AMAZON_LINK_1'">Buy Now on Amazon</button>
-            </div>
-            <div class="product-description">
-                <h3>Features</h3>
-                <ul>
-                    <li>100% food-grade silicone</li>
-                    <li>Heat resistant up to 600°F</li>
-                    <li>Space-saving nested design</li>
-                </ul>
-            </div>
-        </div>
+      <h1 class="brand">SleekChef</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#products">Products</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
     </div>
-</section>
+  </header>
+
+  <section class="product-detail">
+    <div class="container">
+      <div class="product-images">
+        <img src="../assets/images/stackable-set.webp" alt="Stackable Utensil Set">
+      </div>
+      <div class="product-info">
+        <h2>Stackable Utensil Set</h2>
+        <p class="price">$29.99</p>
+        <div class="product-actions">
+          <button class="btn" onclick="addToCart('stackable-set')">Add to Cart</button>
+          <button class="btn amazon-btn" onclick="window.location.href='AMAZON_LINK_1'">Buy on Amazon</button>
+        </div>
+        <div class="product-description">
+          <h3>Features</h3>
+          <ul>
+            <li>100% food-grade silicone</li>
+            <li>Heat resistant up to 600°F</li>
+            <li>Space-saving nested design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 SleekChef. Sustainable Kitchen Solutions</p>
+    </div>
+  </footer>
+
+  <script>
+    // Cart functionality
+    let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    function addToCart(productId) {
+      cartItems.push(productId);
+      localStorage.setItem('cart', JSON.stringify(cartItems));
+      updateCartCount();
+    }
+    function updateCartCount() {
+      document.getElementById('cart-count').textContent = cartItems.length;
+    }
+    updateCartCount();
+  </script>
+</body>
+</html>
